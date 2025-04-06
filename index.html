@@ -1,71 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina De Tributo</title>
-    <link rel="shortcut icon" href="img/aprobado.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Página de tributo a Jorge Sierra, Developer Front-end con experiencia en JavaScript y PHP">
+  <meta name="keywords" content="Jorge Sierra, Developer, Front-end, JavaScript, PHP">
+  <meta name="author" content="Tu Nombre">
+  <title>Página De Tributo - Jorge Sierra</title>
+  <link rel="shortcut icon" href="img/aprobado.png">
+  <!-- Precargar fuentes para mejorar el rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Enlace a CDN de Tailwind para desarrollo -->
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
-<body class="font-serif text-base text-center bg-slate-200 m-0">
-    <main role="main" class="my-8 mx-2 p-4 rounded-md bg-slate-200 sm:m-0">
-        <h1 class="lg:text-6xl mb-0 text-3xl md:leading-none p-6 md:p-1">Jorge Sierra</h1>
-        <p class="p-5">Developer Front-end</p>
-        <figure id="img-div" class="bg-white p-3 m-0 rounded-3xl">
-          <img id="image" class="max-w-full block h-auto my-0 mx-auto rounded-xl" src="img/jorgesierra.jpg" alt="Dev Jorge Sierra foto de perfil en la redes sociales">
-          <figcaption class="mt-4 mr-0 mb-1 ml-0">
-            Jorge Sierra, es un Developer con mas de 3 años de experiencia en la web con tecnologia como JavaScript y PHP.  
-          </figcaption>
-        </figure>
-        <section id="tribute-info">
-          <h2 class="text-2xl">Aquí hay una línea de tiempo de la vida de Jorge</h2>
-          <ul class="max-w-lg mt-0 mr-auto mb-12 ml-auto text-left leading-6">
-            <li class="my-4 mx-0"><strong>1992</strong> - Nacido en Juan y Medio corregimiento de la Guajira </li>
-            <li>
-              <strong>1999</strong> - Deja su pueblo natal para vivir en la capital de la Guajira y realizar sus estudios superiores. 
-            </li>
-            <li>
-              <strong>2009</strong> - Tiene que dejar sus estudios para trabajar de ayudante de albañilería para ayudar a sus hermanos a estudiar.
-            </li>
-            <li>
-              <strong>2012</strong> - Deja de trabajar para poder estudiar a tiempo completo con la intención de mejorar su calidad de vida.
-            </li>
-            <li>
-              <strong>2014</strong> - Termina sus estudios en el SENA y comienza a realizar sus prácticas sobre tecnólogo en construcción con una empresa local de remodelación de edificios.
-            </li>
-            <li>
-              <strong>2015</strong> - Comienza la migración venezolana a diferentes países de Latinoamérica y queda desempleado por cobros muy baratos de la mano de obra migrante. 
-            </li>
-            <li>
-              <strong>2016</strong> - Recibe su tarjeta profesional de tecnólogo en construcción.
-            </li>
-            <li>
-              <strong>2017</strong> -Cambia radicalmente de profesión debido a la alta tasa de desempleo en la región y se inicia en el mundo de la programación y el desarrollo de software basado en tecnología web.
-            </li>
-            <li>
-              <strong>2018</strong> - Crea una pizzería basada en el concepto de cocina fantasma y con la premisa de ser totalmente digital y como mejoras en los tiempos de entrega.
-            </li>
-            <li>
-              <strong>2020</strong> -El negocio de la pizzería fue un rotundo éxito a pesar de todos los contratiempos, de no tener suficiente financiación y muchos otros problemas.
-            </li>
-            <li>
-              <strong>2021</strong> - Actualmente, se encuentra trabajando en la Pizzería Horeb´s la empresa que construyó con mucho esfuerzo con la finalidad de salir adelante y poder estudiar programación y desarrollo web, estoy aprendiendo diferentes tecnologías web como HTML5, CSS3, JavaScript y PHP para poder conseguir su primer trabajo para finales de 2022 en esta maravillosa industria. 
-           
-          <blockquote cite="https://jorgesierra.online" class="italic max-w-xl mt-0 mr-auto mb-12 ml-auto">
-            <p>
-                "La vida y los logros de Jorge Sierra son testimonio del gran alcance
-                contribución que el intelecto imponente de un hombre, la persistencia y
-                visión tecnologica puede contribuir a la paz y el progreso humano".
-            </p>
-            <cite>-- Hermana de Jorge Sandy Sierra</cite>
-          </blockquote>
-          <h2>
-            Si tienes tiempo, deberías leer más sobre este increíble Developer
-             puedes visitar su
-            <a class="text-lime-500 visited:text-red-600" href="https://jorgesierra.online" target="_blank">Blog Personal</a>.
-          </h2>
-        </section>
-      </main>
+
+<body class="font-serif text-base text-center bg-gradient-to-b from-slate-100 to-slate-200 m-0 antialiased">
+  <header class="bg-primary text-white py-4 shadow-md">
+    <div class="container mx-auto">
+      <h1 class="lg:text-5xl text-2xl font-bold mb-0 md:leading-tight p-2">Jorge Sierra</h1>
+      <p class="text-xl text-slate-200">Developer Front-end</p>
+    </div>
+  </header>
+
+  <main role="main" class="container mx-auto my-8 p-4 bg-white shadow-lg rounded-lg max-w-4xl">
+    <figure id="img-div" class="bg-white p-5 m-0 rounded-3xl shadow-inner reveal">
+      <div class="overflow-hidden rounded-xl">
+        <img id="image"
+          class="w-full max-w-md block h-auto my-0 mx-auto transition-transform duration-500 hover:scale-105"
+          src="img/jorgesierra.jpg" alt="Jorge Sierra, desarrollador front-end" loading="lazy">
+      </div>
+      <figcaption class="mt-6 mr-0 mb-3 ml-0 text-lg text-slate-700">
+        Jorge Sierra es un Developer con más de 3 años de experiencia en desarrollo web utilizando tecnologías como
+        JavaScript y PHP.
+      </figcaption>
+    </figure>
+
+    <section id="tribute-info" class="mt-10">
+      <h2 class="text-3xl font-bold text-primary mb-8 reveal">Línea de Tiempo de Jorge Sierra</h2>
+
+      <div class="max-w-2xl mt-0 mr-auto mb-12 ml-auto text-left leading-relaxed pl-4">
+        <ul class="space-y-6">
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">1992</span> - Nacido en Juan y Medio, corregimiento de La Guajira.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">1999</span> - Deja su pueblo natal para vivir en la capital de La
+            Guajira y realizar sus estudios superiores.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2009</span> - Tiene que dejar sus estudios para trabajar de ayudante de
+            albañilería para ayudar a sus hermanos a estudiar.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2012</span> - Deja de trabajar para poder estudiar a tiempo completo
+            con la intención de mejorar su calidad de vida.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2014</span> - Termina sus estudios en el SENA y comienza a realizar sus
+            prácticas como tecnólogo en construcción con una empresa local de remodelación de edificios.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2015</span> - Comienza la migración venezolana a diferentes países de
+            Latinoamérica y queda desempleado por cobros muy baratos de la mano de obra migrante.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2016</span> - Recibe su tarjeta profesional de tecnólogo en
+            construcción.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2017</span> - Cambia radicalmente de profesión debido a la alta tasa de
+            desempleo en la región y se inicia en el mundo de la programación y el desarrollo de software basado en
+            tecnología web.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2018</span> - Crea una pizzería basada en el concepto de cocina
+            fantasma y con la premisa de ser totalmente digital y como mejoras en los tiempos de entrega.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2020</span> - El negocio de la pizzería fue un rotundo éxito a pesar de
+            todos los contratiempos, de no tener suficiente financiación y muchos otros problemas.
+          </li>
+          <li class="timeline-item reveal">
+            <span class="font-bold text-primary">2021</span> - Actualmente, se encuentra trabajando en la Pizzería
+            Horeb's, la empresa que construyó con mucho esfuerzo con la finalidad de salir adelante y poder estudiar
+            programación y desarrollo web. Está aprendiendo diferentes tecnologías web como HTML5, CSS3, JavaScript y
+            PHP para poder conseguir su primer trabajo para finales de 2022 en esta maravillosa industria.
+          </li>
+        </ul>
+      </div>
+
+      <blockquote cite="https://jorgesierra.online"
+        class="italic max-w-xl my-12 mx-auto p-6 bg-slate-50 border-l-4 border-primary rounded shadow-sm reveal">
+        <p class="text-lg">
+          "La vida y los logros de Jorge Sierra son testimonio del gran alcance y
+          contribución que el intelecto imponente de un hombre, la persistencia y
+          visión tecnológica pueden contribuir a la paz y el progreso humano".
+        </p>
+        <cite class="block mt-4 text-right text-slate-600">-- Sandy Sierra, hermana de Jorge</cite>
+      </blockquote>
+
+      <div class="my-10 reveal">
+        <h2 class="text-2xl font-bold mb-4">
+          Si tienes tiempo, deberías leer más sobre este increíble Developer
+        </h2>
+        <a class="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-blue-800 transition-colors duration-300 shadow-md"
+          href="https://jorgesierra.online" target="_blank" rel="noopener noreferrer">
+          Visitar su Blog Personal
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-16 border-t pt-8 reveal">
+      <h2 class="text-2xl font-bold mb-6">Proyectos Destacados</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <div class="bg-slate-50 p-5 rounded-lg shadow hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-bold text-primary mb-2">Pizzería Horeb's</h3>
+          <p>Cocina fantasma con operación totalmente digital y optimización de tiempos de entrega.</p>
+        </div>
+        <div class="bg-slate-50 p-5 rounded-lg shadow hover:shadow-md transition-shadow">
+          <h3 class="text-xl font-bold text-primary mb-2">Portfolio Personal</h3>
+          <p>Desarrollo de sitio web personal showcasing habilidades y proyectos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-800 text-white py-6 mt-12">
+    <div class="container mx-auto">
+      <p class="mb-2">© 2025 Página Tributo a Jorge Sierra</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="#" class="hover:text-blue-300 transition-colors">Twitter</a>
+        <a href="#" class="hover:text-blue-300 transition-colors">LinkedIn</a>
+        <a href="#" class="hover:text-blue-300 transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
